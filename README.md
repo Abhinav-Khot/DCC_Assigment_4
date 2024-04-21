@@ -22,7 +22,7 @@ The website folder contains all the HTML templates and the main.py flask file. N
 Steps to set up the website:
 
 
-1. Download the sql dump and set up the testing user and password.The query to set up this user is given under SQL_DUMP folder. You can use any other user and password but make
+1. Import the sql dump and set up the testing user and password.The query to set up this user is given under SQL_DUMP folder. You can use any other user and password but make
    sure to change username and password accordingly in the main.py file.
 
 2. RUn the main.py file and then load the address as shown in the terminal.
