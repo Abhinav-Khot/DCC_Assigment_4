@@ -9,7 +9,7 @@ In MySQL:
 
 
 First a database called all_bonds_data was created.
-Two tables caleed all_data_encashed and all_data_purchased were created, and the data from the csv files were imported into these tables. A query was run on both tables to remove the commas from the denominations attribute and change its datatype to bigint.
+Two tables called all_data_encashed and all_data_purchased were created, and the data from the csv files were imported into these tables. A query was run on both tables to remove the commas from the denominations attribute and change its datatype to bigint.
 
 
 All the queries used to setup and modify the table as described above can be found in the flask.sql file in the PDF_TO_CSV_TO_SQL folder.
