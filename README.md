@@ -44,7 +44,7 @@ The user is prompted to chose the table from which he wants to fetch the records
 
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/bd1131a9-9b3f-4217-a751-0538e53db300)
 
-The SQL query behind this can be found in the main.py file. The Basic pesudocode outline is SELECT FIELD FROM TABLE WHERE FIELD_VALUE = USER_ENTERED_TABLE;
+The SQL query behind this can be found in the main.py file.
 
 Question 2 :
 
