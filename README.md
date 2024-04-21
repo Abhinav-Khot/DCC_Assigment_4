@@ -73,7 +73,7 @@ For the fifth question, the user is prompted to enter the name of a company. Aft
 
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/a54103e8-bb29-4cc8-a308-d4f49eac4c62)
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/457a0d5d-ff9b-4f13-8b11-71db238d169b)
-![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/7a8c9cdd-48b4-4d33-8f8a-a008c997a3e6)
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/b3a7f996-a6dd-4339-bfda-b9ac25281c80)
 
 
 Question 6 :
