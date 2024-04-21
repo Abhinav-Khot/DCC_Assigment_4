@@ -1,7 +1,7 @@
 Name : Abhinav
 Roll number : 23110006
 
-This website was developed using HTML,CSS,JS,ChartJS,flask,Bootstrap and djinja2. All the required dependencies can be found in requirements.txt
+This website was developed using HTML,CSS,JS,ChartJS,flask,Bootstrap and djinja2. All the required dependencies can be found in requirements.txt.
 
 First the data from the pdfs was extracted into two csv files, encashed_bonds_data and purchased_bonds_data using fitz. The code used to achieve this and the corresponding pdf and csv files can all be found in the PDF_TO_CSV folder.
 
@@ -9,8 +9,6 @@ In MySQL:
 
 
 First a database called all_bonds_data was created.
-
-
 Two tables caleed all_data_encashed adn all_data_purchased were created, and the data from the csv files were copied into these tables. A query was run on both tables to remove the commas from the denominations attribute and change its datatype to bigint.
 
 
@@ -24,7 +22,7 @@ The website folder contains all the HTML templates and the main.py flask file. N
 Steps to set up the website:
 
 
-1. Download the sql dump and set up the testing user and password. You can use any other user and password but make
+1. Download the sql dump and set up the testing user and password.The query to set up this user is given under SQL_DUMP folder. You can use any other user and password but make
    sure to change username and password accordingly in the main.py file.
 
 2. RUn the main.py file and then load the address as shown in the terminal.
