@@ -35,3 +35,27 @@ Home page of the website :
 Answers to the questions with Images :
 
 Question 1 :
+
+The user is prompted to chose the table from which he wants to fetch the records from. The fields dropdown gets updated based on the choice of the table to correspond the fields of the selected table, this is achieved using embedded JS code. The user can then enter the value of the field and hit enter to fetch the records. Bootstap was to make the table better looking.
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/a9689b99-c90b-45f5-a27c-1a4b76346e3c)
+
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/8d80840f-f11d-4c8b-aae7-21c1c71127b8)
+
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/bd1131a9-9b3f-4217-a751-0538e53db300)
+
+The SQL query behind this can be found in the main.py file. The Basic pesudocode outline is SELECT FIELD FROM TABLE WHERE FIELD_VALUE = USER_ENTERED_TABLE;
+
+Question 2 :
+
+For the second quesiton, the user is prompted to enter the name of the comapny for which they want to check the data for. After submitting it, a table is displayed contianing the year and the number of bonds purchased and their value as fields. Two bar charts are also plotted using ChartJS using the afforementioned fields. A fucntionality to downlaod the Charts is also added. The JS code for this embedded inline. Bootstap was to make the table better looking.
+
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/3c79dca3-cdf0-4be3-8824-d8bb2ea9fbeb)
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/2fdc05b5-baf6-4815-bc63-c618c64b12cb)
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/5481071a-d1ca-4085-875e-d4f235c2907e)
+
+
+
+
+
+
+
