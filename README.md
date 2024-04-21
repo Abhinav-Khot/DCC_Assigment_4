@@ -17,7 +17,7 @@ All the queries used to setup and modify the table as described above can be fou
 Website:
 
 
-The website folder contains all the HTML templates and the main.py flask file. Note that all CSS and JS used is inline and there are seperate static files for these.
+The website folder contains all the HTML templates and the main.py flask file. Note that all CSS and JS used is inline and there are no seperate static files for these.
 
 Steps to set up the website:
 
