@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .table_display {
+        width: 800 px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <p class="lead">
+      <b
+        >Select the Table and field using which you want to filter the data and
+        then enter the value</b
+      >
+    </p>
+    <form action="/filterpage/result" method="POST">
+      <label class="lead">
+        Table :
+        <select name="table_selecter" id="table_selecter">
+          <option value="Purchased" selected>Purchased</option>
+          <option value="Encashed">Encashed</option>
+        </select>
+      </label>
+
+      <label class="lead">
+        Fields :
+        <select name="Fields_Encashed" id="dpdn1">
+          <option value="Bond_Number">Bond Number</option>
+          <option value="Name_of_the_Political_Party">
+            Name of the political Party
+          </option>
+          <option value="Account_no_of_Political_Party">
+            Account number of the political Party
+          </option>
+          <option value="Denominations">Denominations</option>
+          <option value="Pay_Branch_Code">Pay Branch Code</option>
+          <option value="Pay_Teller">Pay Teller</option>
+          <option value="Date_of_Encashment">Date of Encashment</option>
+        </select>
+      </label>
+
+      <select name="Fields_Purchased" id="dpdn2">
+        <option value="Bond_Number">Bond Number</option>
+        <option value="Name_of_the_Purchaser">Name of the Purchaser</option>
+        <option value="Journal_Date">Journal Date</option>
+        <option value="Date_of_Purchase">Date of Purchase</option>
+        <option value="Date_of_Expiry">Date of Expiry</option>
+        <option value="Issue_Branch_Code">Issue Branch Code</option>
+        <option value="Issue_Teller">Issue Teller</option>
+        <option value="Reference_Number_URN">Reference Number (URN)</option>
+      </select>
+
+      <input type="text" name="Field_val" />
+
+      <input type="submit" value="Submit" class="btn btn-dark" />
+    </form>
+
+    {%if result%}
+    <div class="table_display">
+      <table class="table table-striped">
+        <thead>
+          {%if table == "Encashed"%}
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Date of Encashment</th>
+            <th scope="col">Name of Political Party</th>
+            <th scope="col">Account number of Political Party</th>
+            <th scope="col">Prefix</th>
+            <th scope="col">Bond Number</th>
+            <th scope="col">Denominations</th>
+            <th scope="col">Pay Branch Code</th>
+            <th scope="col">Pay Teller Code</th>
+          </tr>
+          {%else%}
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Reference Number (URN)</th>
+            <th scope="col">Journal Date</th>
+            <th scope="col">Date of Purchase</th>
+            <th scope="col">Date of Expiry</th>
+            <th scope="col">Name of the Purchaser</th>
+            <th scope="col">Prefix</th>
+            <th scope="col">Bond Number</th>
+            <th scope="col">Denominations</th>
+            <th scope="col">Issue Branch Code</th>
+            <th scope="col">Isuue Teller</th>
+            <th scope="col">Status</th>
+          </tr>
+          {%endif%}
+        </thead>
+
+        <tbody>
+          {% if result == "NA"%}
+          <tr>
+            <td colspan="12" style="text-align: center">No Data Found</td>
+          </tr>
+          {%else%} {% for item in result %}
+          <tr>
+            {% for cell in item %}
+            <td>{{cell}}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %} {%endif%}
+        </tbody>
+      </table>
+    </div>
+    {%endif%}
+
+    <script>
+      document.querySelector("#dpdn1").style.display = "none";
+      document
+        .getElementById("table_selecter")
+        .addEventListener("change", (e) => {
+          if (e.target.value === "Purchased") {
+            document.getElementById("dpdn1").style.display = "none";
+            document.getElementById("dpdn2").style.display = "";
+          } else {
+            document.getElementById("dpdn1").style.display = "";
+            document.getElementById("dpdn2").style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
