@@ -61,7 +61,7 @@ For the third quesiton, the user is prompted to enter the name of the party for 
 
 Question 4 :
 
-For the fourth question, the user is prompted to enter the name of a poltitcal party. After submitting the name, an alluvial plot of the companies that donated to the party is shown. An option to download this chart is also given. A table showing the companies that donated to the party along with the total amount that the company donated to the party is given. The total amount donated to the party by all the companies is also displayed. The query for this task is performed on the inner join on the all_data_encashed and all_data_purchased table.
+For the fourth question, the user is prompted to enter the name of a poltitcal party. After submitting the name, an alluvial plot of the companies that donated to the party is shown. The amount donated by each company can be seen by hovering over the chart. An option to download this chart is also given. A table showing the companies that donated to the party along with the total amount that the company donated to the party is given. The total amount donated to the party by all the companies is also displayed. The query for this task is performed on the inner join on the all_data_encashed and all_data_purchased table.
 
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/c00e07db-c463-4f54-962c-8e1377c047c2)
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/22d30a6d-a916-4423-b42b-a4ce8f978aa7)
@@ -69,7 +69,7 @@ For the fourth question, the user is prompted to enter the name of a poltitcal p
 
 Question 5 :
 
-For the fifth question, the user is prompted to enter the name of a company. After submitting the name, an alluvial plot of the parteies that the company donated to is shown. An option to download this chart is also given. A table showing the companies that donated to the party along with the total amount that the company donated to the party is given. The total amount donated by the company to different parties is also displayed. The query for this task is performed on the inner join on the all_data_encashed and all_data_purchased table.
+For the fifth question, the user is prompted to enter the name of a company. After submitting the name, an alluvial plot of the parteies that the company donated to is shown.The amount donated to each party can be seen by hovering over the chart. An option to download this chart is also given. A table showing the companies that donated to the party along with the total amount that the company donated to the party is given. The total amount donated by the company to different parties is also displayed. The query for this task is performed on the inner join on the all_data_encashed and all_data_purchased table.
 
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/a54103e8-bb29-4cc8-a308-d4f49eac4c62)
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/457a0d5d-ff9b-4f13-8b11-71db238d169b)
@@ -78,7 +78,7 @@ For the fifth question, the user is prompted to enter the name of a company. Aft
 
 Question 6 :
 
-For the sixth question, a pie chart showing the distribution of donations to all political parties is shown. The chart is an interactive chart plotted using ChartJS and an option to download it is also given.
+For the sixth question, a pie chart showing the distribution of donations to all political parties is shown. The chart is an interactive chart plotted using ChartJS and an option to download it is also given.The amount recieved by each party can be seen by hovering over the pie chart.
 
 ![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/aefdaef5-fd0b-46e0-8112-b84079624677)
 
