@@ -74,7 +74,7 @@
         <table class="table table-striped mx-auto">
           <thead>
             <tr>
-              <th scope="col">Company/Individual Name</th>
+              <th scope="col">Party Name</th>
               <th scope="col">Total value of Bonds donated (in rupees)</th>
             </tr>
           </thead>
@@ -105,7 +105,7 @@
 
       for (let i = 0; i < iter.length; i++)
       {
-          mappings.push({from:partyname , to : iter[i][0] , flow : (iter[i][1]/1000000)});
+          mappings.push({from:partyname , to : iter[i][0] , flow : (iter[i][1]/10000000)});
       }
       console.log(mappings);
       new Chart
