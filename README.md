@@ -30,6 +30,8 @@ Steps to set up the website:
 
 Home page of the website :
 
+![image](https://github.com/NiTr0z0/flask_practice/assets/162600608/8df96871-1ecb-4373-a509-40279a6c7d61)
+
 Answers to the questions with Images :
 
 Question 1 :
