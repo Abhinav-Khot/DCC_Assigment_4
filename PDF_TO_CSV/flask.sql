@@ -14,7 +14,7 @@ CREATE TABLE all_data_encashed (
   Pay_Branch_Code VARCHAR(10),
   Pay_Teller BIGINT	
 );
--- after making above table execute the below
+-- after making above table and importing the data into it execute the below
 set sql_safe_updates = 0;
 update all_data_encashed set denominations = replace(denominations, ",", "");
 alter table all_data_encashed modify column denominations bigint;
@@ -35,12 +35,12 @@ CREATE TABLE all_data_purchased (
   Issue_Teller BIGINT,
   `Status` VARCHAR(10)
 );
--- after making above table execute the below
+-- after making above table and importing the data into it execute the below
 set sql_safe_updates = 0;
 update all_data_purchased set denominations = replace(denominations, ",", "");
 alter table all_data_purchased modify column denominations bigint;
 
--- ----------------------
+-- ----------------END----------
 
 
 select Name_of_the_Purchaser, sum(all_data_encashed.Denominations) as total_amount_donated from all_data_encashed join all_data_purchased on 
