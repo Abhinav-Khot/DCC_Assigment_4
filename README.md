@@ -92,6 +92,16 @@ For the sixth question, a pie chart showing the distribution of donations to all
 
 
 
+### Error handling : 
+
+When the user types something a field that doesnt correspond to a record in the table, `No Data Found` is shown to the user. Some examples of this is shown below.
+
+
+![image](https://github.com/NiTr0z0/DCC_Assigment_4/assets/162600608/3e931c4d-6945-4244-b448-e91d4d33581c)
+![image](https://github.com/NiTr0z0/DCC_Assigment_4/assets/162600608/c825f5fa-d839-4f4d-a10b-a858b08e3f02)
+
+![image](https://github.com/NiTr0z0/DCC_Assigment_4/assets/162600608/0bd9a20d-8a4d-4b89-ba03-99fa84abeb21)
+![image](https://github.com/NiTr0z0/DCC_Assigment_4/assets/162600608/b936927e-fbcc-4d28-b41c-0d17bd36b0fa)
 
 
 
